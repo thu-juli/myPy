@@ -1,2 +1,3 @@
-Leader: Thu
-Staff: -
+Leader: Thu Juli
+Staff: None
+Done.
