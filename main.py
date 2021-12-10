@@ -6,8 +6,19 @@ Semua sintaksis dasar bahasa pemrograman terdiri dari:
 """
 
 # Sekuensial
-print('Ibu berkata: "Budi pergi ke toko!"')
-print('Budi menjawab: "Apa yang harus saya lakukan di toko"')
-print('Ibu menjawab: "Beli 1 botol susu jika ada telor, beli 6"')
-print('Maka budi berangkat ke toko')
+print('Ibu berkata: "Budi, pergi ke toko membeli 1 susu"')
+print('Budi menjawab: "OK"')
+print('Budi berangkat ke toko')
 print('Dan budi mulai berbelanja')
+
+# Percabangan
+milk_of_count = 1
+if milk_of_count > 0:
+    print('Budi mengecek harga, dan uang mencukupi')
+    print('Budi membeli 1 susu')
+else:
+    print('Budi melihat tidak ada susu')
+    print('Budi tidak jadi membeli susu')
+
+print('Budi pulang ke rumah')
+print('Budi memberikan hasil belanjanya ke ibu')
