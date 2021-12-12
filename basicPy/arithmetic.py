@@ -41,7 +41,12 @@ print(a, '//', b, '=', results)  # floor function after division
 # operation priority
 print('====Operation Priority====')
 # priority
-##
+"""
+1. ()
+2. **
+3. * / % //
+4. + -
+"""
 x = 3
 y = 2
 z = 4
