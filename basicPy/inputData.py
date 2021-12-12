@@ -4,7 +4,7 @@
 print('====FROM USER====')
 data = input("input data: ")
 print('data value: ', data)
-print('type data: ',type(data))
+print('type data: ', type(data))
 
 # casting to interger (must number no decimal)
 print('====Generate Input String to Integer====')
