@@ -7,4 +7,6 @@ TESTING BRANCH01
 -- content line 2
 --- content line 2.1
 - Line 3
+-- mengingat cara branching
 - Line 4
+-- melakukan pull request
