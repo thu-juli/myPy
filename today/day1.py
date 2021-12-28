@@ -29,3 +29,21 @@ a = "10"
 print("Data:", a)
 print("Type Data:", type(a))
 
+## BOOLEAN
+print("===BOOLEAN===")
+a = True
+print("Data:", a)
+print("Type Data:", type(a))
+
+## Tipe Data Special
+
+## Tipe data from C Leaguage
+# ctypes double
+from ctypes import c_double
+
+print("===C_DOUBLE===")
+a = c_double(10.5)
+print("Data:", a)
+print("Type Data:", type(a))
+
+
