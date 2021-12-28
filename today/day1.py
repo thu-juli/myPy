@@ -17,4 +17,8 @@ a = 10
 print("Data:", a)
 print("Type Data:", type(a))
 
-
+## FLOAT
+print("===FLOAT===")
+a = 10.0
+print("Data:", a)
+print("Type Data:", type(a))
