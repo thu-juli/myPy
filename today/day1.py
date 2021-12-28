@@ -8,4 +8,5 @@
 a = 10
 
 print(a)
+print("this is value a:", a)  # complex command print
 
