@@ -22,3 +22,10 @@ print("===FLOAT===")
 a = 10.0
 print("Data:", a)
 print("Type Data:", type(a))
+
+## STRING
+print("===STRING===")
+a = "10"
+print("Data:", a)
+print("Type Data:", type(a))
+
