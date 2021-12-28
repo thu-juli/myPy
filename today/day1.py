@@ -5,8 +5,16 @@
 
 # Variabel
 
-a = 10
+# a = 10
 
-print(a)
-print("this is value a:", a)  # complex command print
+# print(a)
+# print("this is value a:", a)  # complex command print
+
+# Tipe Data
+## INTEGER
+print("===INTEGER===")
+a = 10
+print("Data:", a)
+print("Type Data:", type(a))
+
 
