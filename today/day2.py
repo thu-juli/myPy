@@ -1,72 +1,38 @@
-# Arithmetic Operators
+# Exercises 
 
+# 1. Convert Fahrenheit to Kelvin
+## Use this formula 
 """"
-Arithmetic in Python 
-> (), **, *, /, %, //, +, -
+1 Convert Fahrenheit to Reamur
+2 Convert Reamur to kelvin
 """
-## PARENTHESIS
-print("===PARENTHESIS===")
-a = 10
-b = 2
-c = 5
+print("Start")
+fahrenheit = float(input("Input temperature in Fahrenheit:"))  # Command for user to input data
+print("Temperatue:", fahrenheit, "F") # Print "input data" from user
 
-result = a + b * c
-print(a,'+',b,'*',c,"=", result) # This normal result because multiplication first operation
-result = (a + b) * c
-print("(",a,'+',b,")",'*',c,"=", result) # in parenthesis first operation
+reamur = 4/9 * (fahrenheit-32) #  Variable process convert Fahrenheit to Reamur
+kelvin = 5/4 * reamur + 273  # Variable process convert Reamur to Kelvin
 
-## EXPONENT
-print("===EXPONENT===")
-a = 2
-b = 3
-result = a ** b
+print("Temperatue:", kelvin,"K") # Print result Fahrenheit to Reamur and Reamur to Kelvin
+print("End.")
 
-print(a,'**',b,"=",result)
 
-## MULTIPLICATION
-print("===MULTIPLICATION===")
-a = 2
-b = 3
-result = a * b
+# 2. Convert Kelvin to Fahrenheit
+## Use this formula
+"""
+1 Convert Kelvin to Celcius
+2 Convert Celcius to Fahrenheit
+"""
 
-print(a,'*',b,"=",result)
+print("Start") # Start idea
+kelvin = float(input("Input temperature in Kelvin:"))  # Command for user to input data
 
-## DIVISON
-print("===DIVISON===")
-a = 3
-b = 2
-result = a / b
+print("Temperatue:", kelvin, "K") # Print "input data" from user
 
-print(a,'/',b,"=",result)
 
-## MODULUS
-print("===MODULUS===")
-a = 10
-b = 3
-result = a % b
+celcius = kelvin - 273  # Convert kelvin to celcius
+fahrenheit = 9/5 * celcius + 32  # Convert celcius to fahrenheit
 
-print(a,'%',b,"=",result)
+print("Temperatue:", fahrenheit,"F") # Print result Fahrenheit to Reamur and Reamur to Kelvin
+print("End.")
 
-## FLOR DIVISION
-print("===FLOR DIVISION===")
-a = 10
-b = 3
-result = a // b
-
-print(a,'//',b,"=",result)
-
-## INCREASE
-print("===INCREASE===")
-a = 10
-b = 2
-result = a + b
-
-print(a,'+',b,"=",result)
-
-# DECREASE
-print("===DECREASE===")
-a = 3
-b = 2
-result = a - b
-
-print(a,'-',b,"=",result)
