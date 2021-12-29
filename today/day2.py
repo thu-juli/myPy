@@ -29,3 +29,14 @@ a = True  # Tipe data bolean (True/False) This is Variable
 print("===BOOLEAN===") # DECORATE
 print("Data a:", a)  # This Simple Command Print
 print("Type Data a:", type(a)) # Simple comand Print Type data
+
+## Special Tipe Data (From type data C)
+
+from ctypes import c_double
+a = c_double(10.0)
+
+print("===C_DOUBLE===") # DECORATE
+print("Data a:", a)  # This Simple Command Print
+print("Type Data a:", type(a)) # Simple comand Print Type data
+
+
