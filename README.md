@@ -1,4 +1,3 @@
 # my-first-python-code
-Test with SSH
 
-With SSH!!
+This Repo for daily exercises
