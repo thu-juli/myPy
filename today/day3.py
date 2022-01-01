@@ -1,37 +1,37 @@
-# Casting input from user
-print("===INPUT USER===")
-input_user = input("please input random data: ") # this command to assigment variable from user
-
-print("data:", input_user, "type", type(input_user))  # print value and type data from input_user
-"""
-All input from user always result in type data "string
-Here, important use CASTING to convert type data
-"""
-
-# CASTING to INTEGER
-# print("===INTEGER===")
-# data_int = int(input_user)
-
-# print("data:", data_int, "type", type(data_int)) # Error when input decimal, char or bool
-
-# CASTING to FLOAT
-# print("===FLOAT===")
-# data_float = float(input_user)
-
-# print("data:", data_float, "type", type(data_float)) # Error when char and bool
+# aritmeth operation
+# in python availible artitmeth operation ((),**,*,/,%,//,+,-)
 
 """
-Tips: convert to number use float because float can convert all number (deciman or non decimal)
+() > Parenthesis use piority number 1
+** > Use Exponent 
+* > Use Multiple
+/ > Use Division
+% > Use Modulus
+// > Use Flor Division
++ > Use increase
+- > Use decrease
 """
 
-# CASTING to BOOLEAN
-# print("===BOOLEAN===")
-# data_bool = bool(input_user)
+# Exercise day3
+# Convert day to time
+"""
+Input
+1. Command to user input day 
 
-# print("data:", data_bool, "type", type(data_bool)) # this command use detect user input data on no input data
+Process
+1. Process day to hours, minute and sec
 
-# CASTING to BOOLEAN ver2
-print("===BOOLEAN===")
-data_bool = bool(float(input_user))
+Result
+1. Day in hours, minute and sec
+"""
+print("===Convert day to time===")
+input_user = float(input("input day your choose(in number): ")) # Input and convert in same command
 
-print("data:", data_bool, "type", type(data_bool)) # this command math use user choose (yes/no) and error when user no input
+in_hour = input_user * 24
+in_minute = in_hour * 60
+in_sec = in_minute * 60
+
+print("==RESULT==")
+print("day in hours:", in_hour, "h")
+print("day in minutes:", in_minute, "m")
+print("day in seconds:", in_sec, "sec")
