@@ -1,62 +1,37 @@
-# CASTING TYPE DATA
-# Casting type data can use convert type data to another type data
+# Casting input from user
+print("===INPUT USER===")
+input_user = input("please input random data: ") # this command to assigment variable from user
 
-# INTEGER
-print("===CASTING INTEGER===")
-data_int = 10  # Assigment variable
-print("data :", data_int, "type:", type(data_int))  # Print value data_int and print type data use on data_int
+print("data:", input_user, "type", type(input_user))  # print value and type data from input_user
+"""
+All input from user always result in type data "string
+Here, important use CASTING to convert type data
+"""
 
-## CASTING
-data_float = float(data_int)  # Convert int to float
-data_str = str(data_int)  #  Convert int to str
-data_bool = bool(data_int)  #  Convert int to boolean
+# CASTING to INTEGER
+# print("===INTEGER===")
+# data_int = int(input_user)
 
-## Time to print
-print("data :", data_float, "type:", type(data_float))  # in decimal
-print("data :", data_str, "type:", type(data_str))   # in char
-print("data :", data_bool, "type:", type(data_bool))  # result False if value 0 and True else value 0
+# print("data:", data_int, "type", type(data_int)) # Error when input decimal, char or bool
 
-# FLOAT
-print("===CASTING FLOAT===")
-data_float = 10.0  # Assigment variable
-print("data :", data_float, "type:", type(data_float))
+# CASTING to FLOAT
+# print("===FLOAT===")
+# data_float = float(input_user)
 
-## CASTING
-data_int = int(data_float)
-data_str = str(data_float)
-data_bool = bool(data_float)
+# print("data:", data_float, "type", type(data_float)) # Error when char and bool
 
-## Time to print
-print("data :", data_int, "type:", type(data_int))  # in number (non decimal)
-print("data :", data_str, "type:", type(data_str))   # in char
-print("data :", data_bool, "type:", type(data_bool))  # result False if value 0 and True else value 0
+"""
+Tips: convert to number use float because float can convert all number (deciman or non decimal)
+"""
 
-# STRING
-print("===CASTING STRING===")
-data_str = ""  # Assigment variable
-print("data :", data_str, "type:", type(data_str))
+# CASTING to BOOLEAN
+# print("===BOOLEAN===")
+# data_bool = bool(input_user)
 
-## CASTING
-# data_int = int(data_str)
-# data_float = float(data_str)
-data_bool = bool(data_str)
+# print("data:", data_bool, "type", type(data_bool)) # this command use detect user input data on no input data
 
-## Time to print
-# print("data :", data_int, "type:", type(data_int))  # error when value decimal and char
-# print("data :", data_float, "type:", type(data_float))   # error when char
-print("data :", data_bool, "type:", type(data_bool))  # result False if value none("")
+# CASTING to BOOLEAN ver2
+print("===BOOLEAN===")
+data_bool = bool(float(input_user))
 
-# BOLEEAN
-print("===CASTING BOLEEAN===")
-data_bool = False  # Assigment variable
-print("data :", data_bool, "type:", type(data_bool))
-
-## CASTING
-data_int = int(data_bool)
-data_float = float(data_bool)
-data_str = str(data_bool)
-
-## Time to print
-print("data :", data_int, "type:", type(data_int))  # result 0 when False and result 1 when True
-print("data :", data_float, "type:", type(data_float))   # result 0 when False and result 1 when True
-print("data :", data_str, "type:", type(data_str))  # result False when False and result True when True
+print("data:", data_bool, "type", type(data_bool)) # this command math use user choose (yes/no) and error when user no input
