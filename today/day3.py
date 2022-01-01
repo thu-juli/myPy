@@ -1,32 +1,62 @@
-# basic type data in python (integer, float, string, boolean)
+# CASTING TYPE DATA
+# Casting type data can use convert type data to another type data
 
 # INTEGER
-print("===INTERGER===")
-data_int = 10
-print("value on data_int:", data_int)  # Print value data_int
-print("type data on data_int:", type(data_int)) # Print type data use on variable data_int
+print("===CASTING INTEGER===")
+data_int = 10  # Assigment variable
+print("data :", data_int, "type:", type(data_int))  # Print value data_int and print type data use on data_int
+
+## CASTING
+data_float = float(data_int)  # Convert int to float
+data_str = str(data_int)  #  Convert int to str
+data_bool = bool(data_int)  #  Convert int to boolean
+
+## Time to print
+print("data :", data_float, "type:", type(data_float))  # in decimal
+print("data :", data_str, "type:", type(data_str))   # in char
+print("data :", data_bool, "type:", type(data_bool))  # result False if value 0 and True else value 0
 
 # FLOAT
-print("===FLOAT===")
-data_float = 10.0
-print("value on data_float:", data_float)  # Print value data_float
-print("type data on data_float:", type(data_float)) # Print type data use on variable data_float
+print("===CASTING FLOAT===")
+data_float = 10.0  # Assigment variable
+print("data :", data_float, "type:", type(data_float))
+
+## CASTING
+data_int = int(data_float)
+data_str = str(data_float)
+data_bool = bool(data_float)
+
+## Time to print
+print("data :", data_int, "type:", type(data_int))  # in number (non decimal)
+print("data :", data_str, "type:", type(data_str))   # in char
+print("data :", data_bool, "type:", type(data_bool))  # result False if value 0 and True else value 0
 
 # STRING
-print("===STRING===")
-data_str = "10"
-print("value on data_str:", data_str)  # Print value data_str
-print("type data on data_str:", type(data_str)) # Print type data use on variable data_str
+print("===CASTING STRING===")
+data_str = ""  # Assigment variable
+print("data :", data_str, "type:", type(data_str))
 
-# BOOLEAN
-print("===BOOLEAN===")
-data_bool = True  # Commend in type data boolean (True or False)
-print("value on data_bool:", data_bool)  # Print value data_bool
-print("type data on data_bool:", type(data_bool)) # Print type data use on variable data_bool
+## CASTING
+# data_int = int(data_str)
+# data_float = float(data_str)
+data_bool = bool(data_str)
 
-## Special Type data import in c_types
-from ctypes import c_double
-print("===CTYPES===")
-data_double = c_double(10.0)
-print("value on data_double:", data_double)  # Print value data_double
-print("type data on data_double:", type(data_double)) # Print type data use on variable data_double
+## Time to print
+# print("data :", data_int, "type:", type(data_int))  # error when value decimal and char
+# print("data :", data_float, "type:", type(data_float))   # error when char
+print("data :", data_bool, "type:", type(data_bool))  # result False if value none("")
+
+# BOLEEAN
+print("===CASTING BOLEEAN===")
+data_bool = False  # Assigment variable
+print("data :", data_bool, "type:", type(data_bool))
+
+## CASTING
+data_int = int(data_bool)
+data_float = float(data_bool)
+data_str = str(data_bool)
+
+## Time to print
+print("data :", data_int, "type:", type(data_int))  # result 0 when False and result 1 when True
+print("data :", data_float, "type:", type(data_float))   # result 0 when False and result 1 when True
+print("data :", data_str, "type:", type(data_str))  # result False when False and result True when True
