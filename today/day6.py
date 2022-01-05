@@ -1,21 +1,30 @@
-# CASTING FROM INPUT USER
+# exercise aritmeth operation
 
-# INPUT FROM USER
-input_user = input("please input data: ")
+"""
+1 please calculate modulus and floor division this quiz
+> 9 / 5
 
-# what is type data from user
-print("your data entered:", input_user, "type data:", type(input_user))  # all type data from user char (str)
+2.  Rian want to stationery shop to buy a ballpoint pen.
+    The price of 1 ballpoint pen is Rp 1.750 IDR.
+    When rian to buy 1 dozen ballpoint and he pays 5 thousand notes.
+    How much change did Rian recived?
+"""
 
-# casting manual in variable
-user_bool = bool(input_user)
+# exercise number 1
+print("===EXERCISE 1===")
+x = 9 % 5
+y = 9 // 5
 
-print("data input user casting to boolean: ", user_bool) # True when user input data and False when user no entered data
+print(9,"%",5,"=",x,"\n",9,"//",5,"=",y)
 
-print("\n", 10*"=", "\n")
+# exercise 2
+print("===EXERCISE 2===")
 
-# casting in one commend 
-input_user = bool(float(input("plese input data on binary (0 or 1): ")))
+ballpoint = 1750
+dozen = 12
+pay = 5 * 5000
 
-print("data your entered from user version 2:", input_user, "type data: ", type(input_user))  # casting bool version 2, False when user input 0 and True user entered 1
+# process 
+rian = pay - (ballpoint * dozen)
 
-
+print("balance the money Rian: ", rian)
