@@ -1,28 +1,51 @@
-# exercise comparasion and logic operations
+# bitwise operation / binary operation
 
-"""
-1. --- 1+++5 --- 9+++19 ---
-2. +++1 --- 5+++9 --- 19+++
-"""
+# OR (|)
+a = 9
+b = 5
 
-# input user
-print("--- 1+++5 --- 9+++19 ---")
-input_user = float(input("please input data follow in top rule: "))
+c = 9 | 5
 
-# process 
-answer = (1 < input_user < 5) or (9 < input_user < 19)
+print("====OR====")
+print("data:", a, "binary:", format(a,"08b"))
+print("data:", b, "binary:", format(b,"08b"))
+print("data:", c, "binary:", format(c,"08b"))
 
-# result
-print("your data entered:", answer)
+# AND (&)
+c = 9 & 5
 
-print("==============")
-# input user
-print("+++1 --- 5+++9 --- 19+++")
-input_user = float(input("please input data follow in top rule: "))
+print("====AND====")
+print("data:", a, "binary:", format(a,"08b"))
+print("data:", b, "binary:", format(b,"08b"))
+print("data:", c, "binary:", format(c,"08b"))
 
-# process 
-answer =(input_user < 1) or (5 < input_user < 9) or (input_user > 19)
+# NOT (~)
+b = 99
+c = ~b
+print("====AND====")
+print("data: ", b, "binary:", format(b,"08b"))
+print("data:",c, "binary:", format(c,"08b"))
 
-# result
-print("your data entered:", answer)
+# when your intersted to NOT you can use this command
+print("==NOT VALUE===")
 
+d = 0b00000010
+e = 0b11111111 # this variable use to convert variable "d" to another value use "XOR"
+
+print("data:", d)
+print("data:", d^e, "binary:", format(d^e, "08b"))
+
+# shifting 
+## shifting right(>>)
+a = 8
+
+print("== >> ==")
+print("data:", a, "binary:", format(a,"08b"))
+print("data:", a >> 2, "binary:", format(a >> 2,"08b"))
+
+## shifting left(<<))
+a = 8
+
+print("== << ==")
+print("data:", a, "binary:", format(a,"08b"))
+print("data:", a << 2, "binary:", format(a << 2,"08b"))
