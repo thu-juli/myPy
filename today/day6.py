@@ -1,62 +1,21 @@
-# remember casting type data
+# CASTING FROM INPUT USER
 
-# INTEGER
-print("===INTEGER===")
-data_int = 10  # TYPE DATA INT
+# INPUT FROM USER
+input_user = input("please input data: ")
 
-# CASTING TO TYPE DATA
-data_float = float(data_int)
-data_str = str(data_int)
-data_bool = bool(data_int)
+# what is type data from user
+print("your data entered:", input_user, "type data:", type(input_user))  # all type data from user char (str)
 
-# PRINT CASTING
-print("data:", data_int, "type:", type(data_int))
-print("data:", data_float, "type:", type(data_float))
-print("data:", data_str, "type:", type(data_str))
-print("data:", data_bool, "type:", type(data_bool))
+# casting manual in variable
+user_bool = bool(input_user)
 
-# FLOAT
-print("===FLOAT===")
-data_float = 10.0
+print("data input user casting to boolean: ", user_bool) # True when user input data and False when user no entered data
 
-# CASTING TO TYPE DATA
-data_int = int(data_float)
-data_str = str(data_float)
-data_bool = bool(data_float)
+print("\n", 10*"=", "\n")
 
-# PRINT CASTING
-print("data:", data_int, "type:", type(data_int))
-print("data:", data_float, "type:", type(data_float))
-print("data:", data_str, "type:", type(data_str))
-print("data:", data_bool, "type:", type(data_bool))
+# casting in one commend 
+input_user = bool(float(input("plese input data on binary (0 or 1): ")))
 
-# STRING
-print("===STRING===")
-data_str = "10"
+print("data your entered from user version 2:", input_user, "type data: ", type(input_user))  # casting bool version 2, False when user input 0 and True user entered 1
 
-# CASTING TO TYPE DATA
-data_int = int(data_str)
-data_float = float(data_str)
-data_bool = bool(data_str)
-
-# PRINT CASTING
-print("data:", data_int, "type:", type(data_int))
-print("data:", data_float, "type:", type(data_float))
-print("data:", data_str, "type:", type(data_str))
-print("data:", data_bool, "type:", type(data_bool))
-
-# BOOLEAN
-print("===BOOLEAN===")
-data_bool = True
-
-# CASTING TO TYPE DATA
-data_int = int(data_bool)
-data_float = float(data_bool)
-data_str = str(data_bool)
-
-# PRINT CASTING
-print("data:", data_int, "type:", type(data_int))
-print("data:", data_float, "type:", type(data_float))
-print("data:", data_str, "type:", type(data_str))
-print("data:", data_bool, "type:", type(data_bool))
 
