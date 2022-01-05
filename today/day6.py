@@ -1,111 +1,51 @@
-# assigment operations
+# introduction string
 
-# intro
-print("==INTRO==")
-a = 5
-print("data a:", a)
+# how to write command string in python
+"""
+    1. use quote ('')
+    2. use double quote("")
+"""
 
-a = a + 2  # this commend can be shortened
-print("data a:", a)
+print('this string uses quote')
+print("this string uses double quote")
 
-a = 5 
-a += 2
-print("data a:", a) # this is short command (assigment operations)
+# how to write "" or '' in python?
+print("hai, 'my name is!'")
+print('Budi speaks:"hai, ....."')
 
+# use special char to input 1 quote/double quote
 
-# arithmetic operation
-print("==ARITHMETIC==")
-print("data a:", a)
-a += 2
-print("data a += 2:", a) # this result is 9 because in line #12 variable a += 2
-a -= 2
-print("data a -= 2:", a) # this result is 9 because in line #12 variable a += 2
-a *= 2
-print("data a *= 2:", a) # this result is 9 because in line #12 variable a += 2
-a /= 2
-print("data a /= 2:", a) # this result is 9 because in line #12 variable a += 2
+print("this command to print \' or it\'s")
+# special char can use create 
+## backslash (\)
+print("how to print backslash (\\)")
 
-## modulus & floor division
-print(">> MODULUS & FLOOR DIVISION")
-print("data a :", a)
+# tab
+print("how to print tab (\t\t\t)")
 
-a = 7
-a %= 3
-print("data a %= 3:", a)
+# backspace 
+print("how to print backspace (back \bspace)")
 
-a = 7
-a //= 3
-print("data a //= 3:", a)
+# newline
+print("how to print newline \n(this line 2)") # line feed (use in os UNIX, Linux, or MacOS)
+print("how to print newline \r(this line 2)") # carrige return
+print("how to print newline \r\n(this line 2)") # CRLF (carrige return line feed) use in WinOS
 
-## exponent 
-print(">> EXPONENT")
-a = 5
-print("data a :", a)
+# use string literal or raw
+# when you no use string raw
+print("C:\new folder") # results are not expected
+print(r"C:\new folder") # its work when use string raw
 
-a **= 3
-print("data a **= 3:", a)
+# multiline literal 
 
-# boolean or logic operation
-print("LOGIC OPERATION")
-# OR
-a = True
-print("data a:", a)
-a |= False
-print("data a |= False:", a)
+print("""
+yo
+whats up bro!
+""")
 
-a = False
-print("data a:", a)
-a |= False
-print("data a |= False:", a)
+# multiline literal with string raw
 
-# AND
-a = True
-print("data a:", a)
-a &= False
-print("data a &= False:", a)
-
-a = True
-print("data a:", a)
-a &= True
-print("data a &= True:", a)
-
-# XOR
-a = True
-print("data a:", a)
-a ^= False
-print("data a ^= False:", a)
-
-a = True
-print("data a:", a)
-a ^= True
-print("data a ^= True:", a)
-
-# BITWISE OPERATION
-print("==BITWISE OPERATION==")
-
-a = 5
-print("data a:", a, "binary:", format(a,"08b"))
-a |= 3
-print("data a |=3 :", a, "binary:", format(a,"08b"))
-
-a = 5
-print("data a:", a, "binary:", format(a,"08b"))
-a &= 3
-print("data a &=3 :", a, "binary:", format(a,"08b"))
-
-a = 5
-print("data a:", a, "binary:", format(a,"08b"))
-a ^= 3
-print("data a ^=3 :", a, "binary:", format(a,"08b"))
-
-# SHIFTING 
-print("==SHIFTING==")
-a = 8
-print("data a:", a, "binary:", format(a,"08b"))
-a >>= 2
-print("data a >>=3 :", a, "binary:", format(a,"08b"))
-
-a = 8
-print("data a:", a, "binary:", format(a,"08b"))
-a <<= 2
-print("data a <<=3 :", a, "binary:", format(a,"08b"))
+print(r"""
+yo \n this newline or inline
+hohhhhoo \n\t\b\r\r\n
+""")
