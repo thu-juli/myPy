@@ -1,30 +1,28 @@
-# exercise aritmeth operation
+# exercise comparasion and logic operations
 
 """
-1 please calculate modulus and floor division this quiz
-> 9 / 5
-
-2.  Rian want to stationery shop to buy a ballpoint pen.
-    The price of 1 ballpoint pen is Rp 1.750 IDR.
-    When rian to buy 1 dozen ballpoint and he pays 5 thousand notes.
-    How much change did Rian recived?
+1. --- 1+++5 --- 9+++19 ---
+2. +++1 --- 5+++9 --- 19+++
 """
 
-# exercise number 1
-print("===EXERCISE 1===")
-x = 9 % 5
-y = 9 // 5
-
-print(9,"%",5,"=",x,"\n",9,"//",5,"=",y)
-
-# exercise 2
-print("===EXERCISE 2===")
-
-ballpoint = 1750
-dozen = 12
-pay = 5 * 5000
+# input user
+print("--- 1+++5 --- 9+++19 ---")
+input_user = float(input("please input data follow in top rule: "))
 
 # process 
-rian = pay - (ballpoint * dozen)
+answer = (1 < input_user < 5) or (9 < input_user < 19)
 
-print("balance the money Rian: ", rian)
+# result
+print("your data entered:", answer)
+
+print("==============")
+# input user
+print("+++1 --- 5+++9 --- 19+++")
+input_user = float(input("please input data follow in top rule: "))
+
+# process 
+answer =(input_user < 1) or (5 < input_user < 9) or (input_user > 19)
+
+# result
+print("your data entered:", answer)
+
