@@ -1,51 +1,111 @@
-# bitwise operation / binary operation
+# assigment operations
 
-# OR (|)
-a = 9
-b = 5
+# intro
+print("==INTRO==")
+a = 5
+print("data a:", a)
 
-c = 9 | 5
+a = a + 2  # this commend can be shortened
+print("data a:", a)
 
-print("====OR====")
-print("data:", a, "binary:", format(a,"08b"))
-print("data:", b, "binary:", format(b,"08b"))
-print("data:", c, "binary:", format(c,"08b"))
+a = 5 
+a += 2
+print("data a:", a) # this is short command (assigment operations)
 
-# AND (&)
-c = 9 & 5
 
-print("====AND====")
-print("data:", a, "binary:", format(a,"08b"))
-print("data:", b, "binary:", format(b,"08b"))
-print("data:", c, "binary:", format(c,"08b"))
+# arithmetic operation
+print("==ARITHMETIC==")
+print("data a:", a)
+a += 2
+print("data a += 2:", a) # this result is 9 because in line #12 variable a += 2
+a -= 2
+print("data a -= 2:", a) # this result is 9 because in line #12 variable a += 2
+a *= 2
+print("data a *= 2:", a) # this result is 9 because in line #12 variable a += 2
+a /= 2
+print("data a /= 2:", a) # this result is 9 because in line #12 variable a += 2
 
-# NOT (~)
-b = 99
-c = ~b
-print("====AND====")
-print("data: ", b, "binary:", format(b,"08b"))
-print("data:",c, "binary:", format(c,"08b"))
+## modulus & floor division
+print(">> MODULUS & FLOOR DIVISION")
+print("data a :", a)
 
-# when your intersted to NOT you can use this command
-print("==NOT VALUE===")
+a = 7
+a %= 3
+print("data a %= 3:", a)
 
-d = 0b00000010
-e = 0b11111111 # this variable use to convert variable "d" to another value use "XOR"
+a = 7
+a //= 3
+print("data a //= 3:", a)
 
-print("data:", d)
-print("data:", d^e, "binary:", format(d^e, "08b"))
+## exponent 
+print(">> EXPONENT")
+a = 5
+print("data a :", a)
 
-# shifting 
-## shifting right(>>)
+a **= 3
+print("data a **= 3:", a)
+
+# boolean or logic operation
+print("LOGIC OPERATION")
+# OR
+a = True
+print("data a:", a)
+a |= False
+print("data a |= False:", a)
+
+a = False
+print("data a:", a)
+a |= False
+print("data a |= False:", a)
+
+# AND
+a = True
+print("data a:", a)
+a &= False
+print("data a &= False:", a)
+
+a = True
+print("data a:", a)
+a &= True
+print("data a &= True:", a)
+
+# XOR
+a = True
+print("data a:", a)
+a ^= False
+print("data a ^= False:", a)
+
+a = True
+print("data a:", a)
+a ^= True
+print("data a ^= True:", a)
+
+# BITWISE OPERATION
+print("==BITWISE OPERATION==")
+
+a = 5
+print("data a:", a, "binary:", format(a,"08b"))
+a |= 3
+print("data a |=3 :", a, "binary:", format(a,"08b"))
+
+a = 5
+print("data a:", a, "binary:", format(a,"08b"))
+a &= 3
+print("data a &=3 :", a, "binary:", format(a,"08b"))
+
+a = 5
+print("data a:", a, "binary:", format(a,"08b"))
+a ^= 3
+print("data a ^=3 :", a, "binary:", format(a,"08b"))
+
+# SHIFTING 
+print("==SHIFTING==")
 a = 8
+print("data a:", a, "binary:", format(a,"08b"))
+a >>= 2
+print("data a >>=3 :", a, "binary:", format(a,"08b"))
 
-print("== >> ==")
-print("data:", a, "binary:", format(a,"08b"))
-print("data:", a >> 2, "binary:", format(a >> 2,"08b"))
-
-## shifting left(<<))
 a = 8
-
-print("== << ==")
-print("data:", a, "binary:", format(a,"08b"))
-print("data:", a << 2, "binary:", format(a << 2,"08b"))
+print("data a:", a, "binary:", format(a,"08b"))
+a <<= 2
+print("data a <<=3 :", a, "binary:", format(a,"08b"))
