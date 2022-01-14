@@ -40,3 +40,52 @@ print("index range 0 to 3 : " + full_name[0:4]) # solution
 
 print("smallest characters in " + full_name + " :" + " " + min(full_name))
 print("smallest characters in " + full_name + " :" + " " + max(full_name))
+
+# check min & max work
+
+# use cek in ASII Code
+
+print("ASII Code for : " + str(ord(" ")))
+print("ASII Code for : " + str(ord("u")))
+
+# str method (introduction)
+
+## .count() method returns the number of elements with the specified value
+
+data = "otong surotong"
+count = str(data.count("o"))
+
+print("data : " + data + " " + str(data.count("o")))
+print("data : " + data + " " + count)
+
+## use method upper(), (convert str to Uppercase)  
+
+meet = "hallo good morning"
+print(meet)
+print(meet.upper())
+
+## use method lower(), (convert str to lowercase)  
+
+meet = "Hi, How are you TOdayyy?"
+print(meet)
+print(meet.upper())
+print(meet.lower())
+
+# use isx 
+meet = "hai"
+# print(meet.islower())
+# print(meet.isupper())
+
+# still many string methods for is (exemple) 
+# meet.isalpha > checking this str use all alphabet
+# meet.isalnum > checking this str use alpahabet and number
+# meet.isdecimal > checking this str use all number decimal
+# meet.isspace > checking this str use space
+# meet.istitle > checking this str a title
+
+meet = "Hallo My "
+print(meet.isalpha())
+print(meet.isalnum())
+print(meet.isdecimal())
+print(meet.isspace())
+print(meet.istitle())
