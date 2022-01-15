@@ -1,55 +1,67 @@
-# method str
+# format str
 
-meet = "Hai, How Are You?"
+# use format str for type data str
+from itertools import count
+from lib2to3.pgen2.token import PLUS
+from this import d
+from unicodedata import decimal
 
-print("this normal meet : " + meet)
-print("this upper meet : " + meet.upper())
-print("this lower meet : " + meet.lower())
 
-print("how to check str use method is")
-meet_title = meet.title()
-meet_upper = meet.upper()
-meet_lower = meet.lower()
+print("STR".center(20,"="))
+name = "ucup"
+data = "Hello " + name
+print(data)  # use manipulation str
 
-# check
-print(meet_title + " use " + "method title : " + str(meet_title.istitle()))
-print(meet_upper + " use " + "method upper : " + str(meet_upper.isupper()))
-print(meet_lower + " use " + "method lower : " + str(meet_lower.islower()))
+name = "ucup"
+data = f"Hello {name}"
+print(data)  # use format str (simply)
 
-# use startswith and endswith
+# use format str for type data boolean
+print("Boolean".center(20,'='))
+boolean = True
+print(f"Bool = {type(boolean)}")
+print(f'Boolean = {boolean}')
+print(type(f'Boolean = {boolean}'))
 
-full_name = "ucup sorotong"
+# use format str for type data int or float 
+print("number".upper().center(20,"="))
+number = 15
+print(f'number = {number}')
+print(f'number = {number:d}')
 
-print(full_name + " startswith " + "Ucu : " + str(full_name.startswith("Ucu")))
-print(full_name + " endswith " + "otong : " + str(full_name.endswith("otong")))
+bilion = 1000000
+print(f'bilion = {bilion:,}')
 
-# cek title
+## decimal
+decimal = 10.5809
+print(f'decimal = {decimal:.3f}')
 
-cek_title = "This Is Title".istitle()
-print(cek_title)
+# leading zero
+decimal = 10.5809
+print(f'decimal = {decimal:010.3f}')
 
-## Use join() & split()
-print("join() & split()")
-love = ["i","love","you"]
-print(love)
+# show plus (+) or minus (-)
+minus = -10
+plus = 1000000
+print(f'minus = {minus:-}')
+print(f'plus = {plus:+,.2f}')
 
-# use join()
-full_love = " ".join(love)
-print(full_love)
+# show percentase
+percent = 0.45
+print(f'percent = {percent}')
+print(f'percent = {percent:.1%}')
 
-# use split()
-full_love = "ihmlovehmyou"
-print(full_love.split("hm"))
+# arithmetic operation in placeholder
+print("aritmetic".capitalize().center(20,"="))
+price = 10000
+count = 5
 
-# allocated str use rjust(), ljust(), center()
+print(f'i buy a fruit {price*count}')
+print(f'i buy a fruit {price*count:,}')
 
-print("text")
-print("'"+"text".ljust(10)+"'")
-print("text")
-print("'"+"text".rjust(10)+"'")
-print("text")
-print("'"+"text".center(10,"=")+"'")
-
-## back to normal 
-text = "text".center(10)
-print(text.strip())
+# convert to another number system
+number = 252
+print(f'number decimal = {number}')
+print(f'number binary = {bin(number)}')
+print(f'number octa = {oct(number)}')
+print(f'number hexadecimal = {hex(number)}')
