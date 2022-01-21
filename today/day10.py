@@ -1,12 +1,6 @@
 # format str
 
 # use format str for type data str
-from itertools import count
-from lib2to3.pgen2.token import PLUS
-from this import d
-from unicodedata import decimal
-
-
 print("STR".center(20,"="))
 name = "ucup"
 data = "Hello " + name
