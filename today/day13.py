@@ -1,17 +1,14 @@
-# if and else statement
-'''
-command to create a if statement
-if [condition] : statemet
-'''
-# if statement inline
+# elif statement (else if)
+"""
+my opinion elif are connected 2 or more if
+"""
 name = input('Please input your name: ')
-if name =='julianta': print('Wellcome back "Master"')
-# if statement indentation
-if name == 'ucup':
-    print("Wellcome ucup")
-    print('your handsome')
-# else statement
-else :
-    print('You are not "julianta" and "ucup"')
-    print(f'thanks {name}')
-print('End program.')
+if name == 'ucup': # condition 1
+    print('Hello Ucup') # True action 1
+elif name == 'mario': # codition 2
+    print('Hay mario') # True action 2
+elif name == 'julianta': # condition 3
+    print('Wellcomeback Master') # True action 3
+else : # else condition
+    print('You are?') # else condition
+print('end program.')
