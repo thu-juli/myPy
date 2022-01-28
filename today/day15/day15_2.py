@@ -1,14 +1,14 @@
-# # control flow
-# height = int(input('Please input your height: '))
-# if height > 160:
-#     print('You can enter')
-# else :
-#     print('sorry, you can\'t enter')
-# number = 67
-# if number % 2 == 0:
-#     print('even number')
-# else:
-#     print('odd number')
+# control flow
+height = int(input('Please input your height: '))
+if height > 160:
+    print('You can enter')
+else :
+    print('sorry, you can\'t enter')
+number = 67
+if number % 2 == 0:
+    print('even number')
+else:
+    print('odd number')
 """use elif
 study case menilai nilai tugas siswa
 """
@@ -33,3 +33,16 @@ else:
     Hmm, Anda mendapat nilai D
     Ayo belajar, jangan malas
     """)
+"""
+checking positive and negative numbers
+"""
+print('Program check positive and negatif number'.title())
+numbers = float(input('Please enter a numbers: '))
+if numbers>0:
+    print(f'{numbers} is a positive numbers')
+elif numbers<0:
+    print(f'{numbers} is a negative numbers')
+else:
+    print(f'{numbers} is a zero')
+
+print('end')
