@@ -98,3 +98,51 @@ else:
 ### Pass
 def aFubc():
     pass
+
+var1=""
+while(var1!="exit"):
+    var1=input("Please enter an integer (type exit to exit): ")
+    print(int(var1))
+
+from calendar import c
+import sys
+data=''
+while(data!='exit'):
+    try:
+        data=input('Please enter an integer (type exit to exit): ')
+        print('got integer: {}'.format(int(data)))
+    except:
+        if data == 'exit':
+            pass  # exit gracefully without prompt any error
+        else:
+            print('error: {}'.format(sys.exc_info()[0]))
+
+## simple looping
+number = [1, 2, 3, 4]
+exponen = []
+for n in number:
+    exponen.append(n**2)
+print(exponen)
+
+## inline loop (comprehension)
+number = [1, 2, 3, 4]
+exponen = [n**2 for n in number]
+print(exponen)
+
+list1 = ['d', 'i', 'c', 'o']
+list2 = ['d', 'i', 'n', 'g']
+duplicate = []
+for a in list1:
+    for b in list2:
+        if a == b:
+            duplicate.append(a)
+print(duplicate)
+
+list1 = ['d', 'i', 'c', 'o']
+list2 = ['d', 'i', 'n', 'g']
+duplikat = [a for a in list1 for b in list2 if a == b]
+print(duplikat) # Output: ['d','i']
+
+list_a = range(1, 10, 2)
+x = [[a**2, a**3] for a in list_a]
+print(x)
